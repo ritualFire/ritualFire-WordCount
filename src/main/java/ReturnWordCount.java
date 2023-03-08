@@ -5,6 +5,14 @@ public class ReturnWordCount {
      * @return return the amount of words in a string.
      */
     public int count(String in){
-        return 0;
+        int spaceCount = 0;
+
+        for(int i=0;i<in.length();i++){
+            if(in.charAt(i) == ' '){
+                spaceCount++;
+            }
+
+        }
+        return spaceCount+1;
     }
 }
